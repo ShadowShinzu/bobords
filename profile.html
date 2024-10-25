@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - BrewScape</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>BrewScape</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="cart.html">Cart</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="profile-container">
+        <section class="profile-card">
+            <h2>Personal Information</h2>
+            <div class="avatar">
+                <img src="https://via.placeholder.com/150" alt="Profile Avatar" id="profile-avatar">
+            </div>
+            <div id="profile-info">
+                <div class="info-item">
+                    <strong>First Name:</strong>
+                    <p>John</p>
+                </div>
+                <div class="info-item">
+                    <strong>Last Name:</strong>
+                    <p>Doe</p>
+                </div>
+                <div class="info-item">
+                    <strong>Location:</strong>
+                    <p>Coffee Town, USA</p>
+                </div>
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <p>johndoe@example.com</p>
+                </div>
+                <div class="info-item">
+                    <strong>Member Since:</strong>
+                    <p>January 2022</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="purchase-history-card">
+            <h2>Purchase History</h2>
+            <table id="purchase-history">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Store</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="purchase-history-content">
+                    <tr>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="1"></td> 
+                        <td id="total-price" colspan="1"><strong>Total:</strong> ₱<span>0.00</span></td> 
+                        <td colspan="2"></td> 
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>

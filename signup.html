@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BrewScape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create an account</h2>
+        <!-- Coffee Logo -->
+            <img src="14aed144-08e8-4eed-90ce-8b8fb7daa5ec.jpg" class="logo">
+            <form id="signup-form">
+            <div class="input-group">
+                <input type="text" id="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="location" required>
+                <option value="">Select your location</option>
+                <option value="Cagayan De Oro">Cagayan De Oro</option>
+                <option value="Misamis Oriental">Misamis Oriental</option> 
+                <!-- Add more cities as needed -->
+            </select>
+            <div class="input-group">
+                <input type="date" id="birthday" placeholder="Birthday" required>
+                <select id="gender" required>
+                    <option value="">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

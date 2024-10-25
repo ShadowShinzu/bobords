@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - BrewScape</title>
+    <link rel="stylesheet" href="./homePage.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-container {
+            margin: 20px 0;
+        }
+        .deals, .menu {
+            margin: 20px 0;
+        }
+        .content {
+            display: flex;
+        }
+        .shop-details {
+            background-color: #D2B48C;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .shop-logo {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .shop-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .shop-location, .shop-contact, .shop-rating {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .menu-items {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h3>BrewScape</h3>
+            <nav>
+                <a href="#">Home</a>
+                <a href="cart.html">Cart</a>
+                <a href="profile.html">Profile</a>
+                <span id="logout-button"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search menu items..." />
+        <button id="search-button">Search</button>
+    </div>
+
+    <section class="deals">
+        <h3>Weekly Deal for You!</h3>
+        <div>
+            <div class="homepage-features">
+                <div class="image-container">
+                    <img src="realistic-paper-coffee-cup.png" alt="Coffee Cup" />
+                </div>
+                <div class="deal-banner">
+                    <div class="upper-description">
+                        <h1>Relax with refreshing delivery deal</h1>
+                    </div>
+                    <div class="lower-description">
+                        <p>Get up? Please! Stay right where you are and enjoy 5% off Coffee orders of 1000+ on</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content">
+        <div class="shop-details">
+            <img src="images.png" alt="Shop Logo for Kape Barato" class="shop-logo">
+            <div class="shop-name">Kape Barato</div>
+            <div class="shop-location">Location: Pabayo Streets, Cagayan De Oro City</div>
+            <div class="shop-contact">Contact: (123) 456-7890</div>
+            <div class="shop-rating">Rating: ⭐⭐⭐⭐⭐</div>
+        </div>
+  
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="high-brew-coffee.png" alt="High Brew Coffee" />
+                    <h3>High Brew Coffee</h3>
+                    <p>A smooth blend perfect for your mornings!</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="croissant.png" alt="Croissant" />
+                    <h3>Croissant</h3>
+                    <p>Buttery and flaky, a perfect snack!</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="notification" style="display: none; position: fixed; top: 20px; right: 20px; background-color: #28a745; color: white; padding: 10px; border-radius: 5px; z-index: 1000;"></div>
+
+    <script src="app.js"></script>
+    <script src="logout.js"></script>
+    <script src="https://kit.fontawesome.com/b098b18a13.js" crossorigin="anonymous"></script>
+</body>
+</html>

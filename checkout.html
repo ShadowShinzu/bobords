@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - BrewScape</title>
+    <link rel="stylesheet" href="./homePage.css" />
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h3>BrewScape</h3>
+            <nav>
+                <a href="#">Home</a>
+                <a href="cart.html">Cart</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="checkout-form">
+            <h3>Enter Payment Details</h3>
+            <form id="checkout-form">
+                <input type="text" id="name" placeholder="Name on Card" required>
+                <input type="text" id="card-number" placeholder="Card Number" required>
+                <input type="text" id="expiry-date" placeholder="Expiry Date (MM/YY)" required>
+                <input type="text" id="cvv" placeholder="CVV" required>
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BrewScape Coffee Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
